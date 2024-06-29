@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REDD MUSIC PLAYER</title>
+  </head>
+  <body>
+    <div id="details"><p>PLEASE CHOOSE SONG</p></div>
+
+    <div id="player">
+      <label for="file">PICK SONGS</label>
+      <div id="playlist"></div>
+      <input type="file" name="file" id="file" multiple />
+      <div id="state">NOT PLAYING</div>
+      <audio></audio>
+      <div id="utility-container">
+        <div id="time">
+          <div id="duration">00:00</div>
+          <div id="total-time">00:00</div>
+        </div>
+
+        <div id="seeker"><div id="slider"></div></div>
+      </div>
+
+      <div id="buttons">
+        <button id="previous"><<</button>
+        <button id="play">PLAY</button>
+        <button id="pause">PAUSE</button>
+        <button id="restart">RESTART</button>
+        <button id="next">>></button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </body>
+</html>

@@ -1,0 +1,76 @@
+td input {
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.49);
+    color: rgb(255, 228, 196);
+}
+.equal {
+    background-color: rgba(4, 239, 4, 0.597);
+    border-radius: 50%;
+}    
+
+tr td {
+    width: 170px;
+    height: 130px;
+
+}
+body {
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.clear {
+    margin-left: 7px;
+    background-color: rgba(255, 0, 0, 0.497);
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 100%;
+}
+.screen {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.793);
+    font-size: x-large;
+    border-radius: 9%;
+    color: black;
+    
+}
+em {
+    color: rgba(255, 0, 0, 0.692);
+    font-weight: 20px;
+    font-style: arial;
+
+}
+h1 {
+    text-align: center;
+    color: blue;
+    margin-right: 70px;
+    margin-top: 1px;
+    font-size: 65px;
+}
+.container {
+    margin-left: 30vw;
+    background-color: rgba(0, 0, 0, 0.119);
+    width: fit-content;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+input[type='button']:hover {
+background-color: rgba(207, 1, 1, 0.068);
+}
+input[type='button']:active {
+    background-color: black;
+    }
+    
+.operator {
+    border-radius: 50%;
+    border: none;
+}
+.digit {
+    border-radius: 50%;
+}
+.decimal {
+    border-radius: 30px;
+}
