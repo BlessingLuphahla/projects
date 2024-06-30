@@ -7,7 +7,7 @@ html {
 
 body {
   all: inherit;
-  background: linear-gradient(45deg,rgb(255, 0, 242),rgb(0, 242, 255));
+  background: black;
   align-items: center;
   flex-direction: column;
 }
@@ -23,30 +23,27 @@ canvas {
   margin-top: 20px;
   width: 1200px;
   height: 800px;
-  background-color: rgba(227, 229, 230, 0.609);
   border: 1px solid black;
 }
 
 #score {
-  font-size: 50px;
+  font-size: 30px;
   font-family: monospace;
   font-weight: 900;
-  color: rgb(0, 255, 0);
+  color: white;
 }
 #reset {
+  color: white;
   padding: 2px 10px;
   font-size: 25px;
   font-family: monospace;
   font-weight: 900;
 }
 #pause {
+  color: white;
   margin-top: 5px;
   padding: 2px 10px;
   font-size: 20px;
   font-family: monospace;
   font-weight: 900;
 }
-
-
-
-

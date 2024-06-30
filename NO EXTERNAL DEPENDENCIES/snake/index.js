@@ -6,11 +6,11 @@ var ctx = canvas.getContext("2d");
 
 const gameWidth = canvas.width;
 const gameHeight = canvas.height;
-const snakeColor = "rgb(255, 0, 242)";
-const screenBackground = "rgb(0, 242, 255)";
-const foodColor = "rgba(0,0,0,0.8)";
+const snakeColor = "rgb(0,0,0)";
+const screenBackground = "rgb(255, 255, 255)";
+const foodColor = "rgb(0,0,0)";
 
-const unitSize = 7;
+const unitSize = 5;
 let scoreValue = 0;
 
 let Vx = unitSize;
@@ -120,7 +120,7 @@ function drawSnake() {
 function pauseGame() {
   if (!gameOver) {
     function _showPaused() {
-      ctx.fillStyle = "green";
+      ctx.fillStyle = "black";
       ctx.font = "50px monospace";
       ctx.textAlign = "center";
       ctx.fillText("PAUSED", gameWidth / 2, gameHeight / 2);
