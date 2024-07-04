@@ -1,0 +1,26 @@
+//  variables
+$container-bg-color: #000000d4;
+$font-color: white;
+$text-editor-bg-color: rgba(6, 238, 255, 0.764);
+
+// something
+%flex-box-props {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+%options-btns {
+  margin-left: 5px;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: monospace;
+  text-indent: 5px;
+  word-spacing: -7px;
+  letter-spacing: -2px;
+  cursor: pointer;
+  &:hover {
+    color: rgb(255, 255, 255);
+  }
+}
