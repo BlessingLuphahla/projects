@@ -1,4 +1,3 @@
-import webbrowser
 from datetime import datetime
 from flask import redirect, request, url_for, Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
@@ -102,6 +101,4 @@ def edit(to_do_id):
 
 if __name__ == '__main__':
     # webview.start()
-    default_browser = webbrowser.WindowsDefault()
-    default_browser.open('http://127.0.0.1:5000')
     app.run(debug=True)
