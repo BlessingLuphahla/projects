@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block title %} edit page {% endblock %} {% block
+body %}
+<div class="wrapper-main">
+  <div class="settings-container">
+    <form action="/edit/{{ to_be_edited.id }}" method="POST" name="main_form">
+      {{ to_do_form.name(placeholder=to_be_edited.task) }} <br />
+      <input type="submit" value="SUBMIT" />
+    </form>
+  </div>
+</div>
+{% endblock %}

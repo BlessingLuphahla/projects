@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block title %} index page {% endblock %} {% block
+body %}
+
+<div class="wrapper-main">
+  <div class="index-container">
+    <h1>TO DO LIST</h1>
+    {% for to_do in to_dos %}
+    <div class="to_do">
+      <p>{{ to_do }}</p>
+    </div>
+    <div class="buttons-1"><a href="/edit/{{ to_do.id }}">EDIT</a></div>
+    <div class="buttons-2"><a href="/delete/{{ to_do.id }}">DELETE</a></div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
