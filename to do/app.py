@@ -1,6 +1,6 @@
 import webbrowser
 from datetime import datetime
-from flask import redirect, request, url_for, Flask, render_template,jsonify
+from flask import redirect, request, url_for, Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from wtforms import TextAreaField, Form
 
