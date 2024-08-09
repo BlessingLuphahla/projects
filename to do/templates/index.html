@@ -1,20 +1,45 @@
 {% extends 'base.html' %} {% block title %} index page {% endblock %} {% block
 body %}
 
-<h1>TO DO LIST</h1>
-{% for to_do in to_dos %}
-<div class="bg-dark index-container">
-  <p class="text-primary">{{ to_do }}</p>
-  <a class="btn btn-primary" href="/edit/{{ to_do.id }}">EDIT</a>
-  <a class="btn btn-danger" href="/delete/{{ to_do.id }}">DELETE</a> <br />
+<div class="index-container bg-dark">
+  <h1>TO DO LIST</h1>
+  {% for to_do in to_dos %}
+  <p>{{ to_do }}</p>
+  <a class="todo-btn btn btn-primary" href="/edit/{{ to_do.id }}">EDIT</a>
+  <a class="todo-btn btn btn-danger" href="/delete/{{ to_do.id }}">DELETE</a>
+  <br />
+  {% endfor %}
+  <hr />
 </div>
-{% endfor %}
 
 <style>
   .index-container {
     padding-left: 10px;
-    font-size: 1.3rem;
     padding-bottom: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+  }
+
+  .index-container p {
+    color: white;
+    font-size: 20px;
+    text-transform: lowercase;
+  }
+
+  .index-container h1 {
+    color: white;
+    font-size: 65px;
+    text-transform: lowercase;
+  }
+
+  .todo-btn {
+    width: 150px;
+    align-self: center;
+    margin-top: 5px;
   }
 </style>
 {% endblock %}

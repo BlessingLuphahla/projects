@@ -4,8 +4,16 @@ body %}
   <div class="settings-container">
     <form action="/edit/{{ to_be_edited.id }}" method="POST" name="main_form">
       {{ to_do_form.name(placeholder=to_be_edited.task) }} <br />
-      <input type="submit" value="SUBMIT" />
+      <input class="submit-todo-edit btn btn-primary" type="submit" value="SUBMIT" />
     </form>
   </div>
 </div>
+
+<style>
+  .submit-todo-edit {
+    width: 150px;
+    align-self: center;
+  }
+</style>
+
 {% endblock %}
