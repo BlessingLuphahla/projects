@@ -98,6 +98,6 @@ def edit(to_do_id):
     return render_template('edit.html', to_be_edited=to_be_edited, to_do_form=to_do_form)
 
 
-if __name__ == '__main__':
-    # webview.start()
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     # webview.start()
+#     app.run(debug=True)
